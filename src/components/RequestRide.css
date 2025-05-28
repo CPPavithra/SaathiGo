@@ -1,0 +1,155 @@
+/* RequestRide.css */
+.request-ride {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f45b69;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.greeting {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f9f9f9;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  background: transparent;
+}
+
+.input-field.small {
+  cursor: pointer;
+  color: #444;
+}
+
+.input-field .icon {
+  margin-right: 8px;
+  color: #666;
+}
+
+.toggle-preferences {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.preferences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.pref-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pref-item.women {
+  background: #ffe6ea;
+  color: #c2185b;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle input:checked + .slider {
+  background-color: #f45b69;
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.request-button {
+  margin-top: auto;
+  padding: 16px;
+  font-size: 18px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.request-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

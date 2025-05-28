@@ -1,0 +1,30 @@
+/* Landing.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Container fills full viewport, centers content */
+.landing-container {
+  width: 100%;
+  height: 100vh;
+  max-width: 50vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F7D355;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Landing GIF styling */
+.landing-gif {
+  width: 500px;
+  height: 300px;
+}
+
