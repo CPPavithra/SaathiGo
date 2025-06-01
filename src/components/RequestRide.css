@@ -18,6 +18,17 @@
   flex-direction: column;
 }
 
+.map-container {
+  width: 100%;
+  height: 300px; /* or 100vh/full available space */
+  position: relative;
+  z-index: 2; /* Ensure it's above background gradients */
+  margin: 0 24px 32px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Subtle background elements */
 .request-ride::before {
   content: '';
@@ -174,6 +185,66 @@
   height: 20px;
   color: #F7D355;
   flex-shrink: 0;
+}
+
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  z-index: 999;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-modal {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: white;
+  z-index: 1000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f1f1f1;
+  font-weight: bold;
 }
 
 /* Remove toggle preferences - now always visible */
