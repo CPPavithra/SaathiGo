@@ -5,6 +5,7 @@ import Home from './components/Home.jsx';
 import Signup from './components/Signup.jsx';
 import Login from './components/Login.jsx';
 import RequestRide from './components/RequestRide.jsx';
+import SaathiMatchingFlow from './components/SaathiMatchingFlow.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
  <Route path="/requestride" element={<RequestRide/>} />
+<Route path='/match' element={<SaathiMatchingFlow/>} />
 
     </Routes>
   );
